@@ -27,7 +27,25 @@ body {
 
 }
 
-.glitch {/*基本設定*/
+#wrapper {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.audio_button {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background: url("../img/music_start.png") no-repeat center center;
+  background-size: contain;
+}
+
+.play .audio_button {
+  background-image: url("../img/after.gif");
+}
+
+#glitch {/*基本設定*/
+  visibility:hidden;
   color: white;
   font-size: 40px;
   position: relative;
@@ -100,7 +118,7 @@ body {
     clip: rect(14px, 9999px, 57px, 0);
   }
 }
-.glitch:after {/*疑似要素を加えてカスタムデータ属性の値を表示、重ねる*/
+#glitch:after {/*疑似要素を加えてカスタムデータ属性の値を表示、重ねる*/
   content: attr(data-text);
   position: absolute;
   left: 2rem;
@@ -178,7 +196,7 @@ body {
     clip: rect(10px, 9999px, 87px, 0);
   }
 }
-.glitch:before {
+#glitch:before {
   content: attr(data-text);
   position: absolute;
   left: 1.8rem;
