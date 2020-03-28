@@ -3,10 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LETGOの近況報告</title>
+  <title>レットゴーより近況報告</title>
+
+  <!-- OGP -->
+<meta property="og:title" content="レットゴーより近況報告です" /> 
+<meta property="og:image" content="img/ogp.png" /> 
+<meta property="og:description" content="いかがお過ごしですが？架空宇宙はおでかけ放題ですので、近況報告を兼ねてWEBで遊んでみました。" /> 
+
+<meta name="twitter:card" content="summary_large_image" />  
+  <!-- OGPここまで -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/style.css"> 
+  <link rel="stylesheet" href="css/responsive.css"> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
   <script>
     // ページの読み込みを待つ
@@ -121,7 +130,7 @@
   audioBtn.on('click', function () {
     if( audioWrap.hasClass('play') ) {
       audio.pause();
-      audio.currentTime = 0;
+      // audio.currentTime = 0;
       audioWrap.removeClass('play');
       glitch.style = "visibility:hidden;";
       ColorOfLight =0xffffff;
@@ -141,7 +150,7 @@
 <div class="audio_wrap">
   <div class="audio_button">
   </div>
-  <audio id="audio" src="test_song.mp3" loop>
+  <audio id="audio" src="covid19i_20200328.mp3" loop>
     あなたのブラウザーは <code>audio</code> 要素をサポートしていません。
   </audio>
 </div>
@@ -152,7 +161,7 @@
       <div class ="parent_tv">
         <img  class="tv" src="img/tv.png">
           <div class ="child_tv">
-            <video  muted playsinline src = "test_tv.mp4" width="60%" autoplay loop></video>
+            <video muted playsinline src = "20200308_tv.mp4" width="60%" autoplay loop></video>
             <!-- <img src="img/pict001.png" width="56%"> -->
           </div>
       </div>
